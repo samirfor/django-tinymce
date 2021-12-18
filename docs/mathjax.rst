@@ -8,7 +8,7 @@ to be imported and configured anywhere the content is rendered or edited. You ma
 In ``settings.py``::
 
     TINYMCE_DEFAULT_CONFIG = {...
-                                "external_plugins": {'mathjax': 'plugins/mathjax/plugin.min.js'},
+                                "external_plugins": {'mathjax': 'plugins/mathjax/plugin.js'},
                                 "toolbar": "...all your other toolbar stuff...| mathjax",
                               ...}
 
@@ -44,6 +44,6 @@ https://docs.djangoproject.com/en/dev/ref/contrib/admin/ to something like this:
                 }
             };
         </script>
-        <script type="text/javascript" async defer src="{% static 'plugins/mathjax/mathjax.min.js' %}"></script>
+        <script type="text/javascript" async defer src="{% static 'tinymce/plugins/mathjax/mathjax.min.js' %}"></script>
     {% endblock %}
 
