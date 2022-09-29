@@ -20,7 +20,7 @@ CHANGELOG = read_file("CHANGELOG.rst")
 
 setup(
     name="django-tinymce",
-    version="3.4.0.dev0",
+    version="3.4.0.dev1",
     packages=find_packages(),
     include_package_data=True,
     author="Aljosa Mohorovic",
@@ -50,5 +50,5 @@ setup(
         "Topic :: Software Development :: Libraries :: Python Modules",
     ],
     platforms=["any"],
-    url="https://github.com/jazzband/django-tinymce",
+    url="https://github.com/samirfor/django-tinymce",
 )
