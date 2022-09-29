@@ -2,14 +2,14 @@ tinymce.PluginManager.add('mathjax', function (editor, url) {
     // plugin configuration options
     let symbols = [
         {name: '$$', regex: '^\\$\\$([^$]+)\\$\\$$'},
-        {name: '$', regex: '^\\$([^$]+)\\$$'}
+        {name: '%%', regex: '^\\%\\%([^%]+)\\%\\%$'}
     ]
     let mathjaxClassName = 'math-tex';
     let mathjaxTempClassName = 'math-tex-original';
     let mathjaxScriptSrc = url + '/mathjax.min.js'
     let mathjaxConfig = 'MathJax = {\n' +
         'tex: {\n' +
-        'inlineMath: [["$", "$"], ["\\(", "\\)"]]\n' +
+        'inlineMath: [["$$", "$$"], ["%%", "%%"]]\n' +
         '}\n' +
         '};';
 
